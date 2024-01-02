@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Images\logo.jpg" alt="IndianGrocery">
+        </div>
+    
+    <ul>
+       <li class="item"><a href="index.html">Home</a></li>
+       <li class="item"><a href="aboutUs.html">About Us</a></li>
+       <li class="item submenu"><a href="product.html">Products</a>
+        <div class="submenu-content">
+            <a href="FruitsVeggie.html">Fruits/Veggies</a>
+            <a href="FrozenFood.html">Frozen Food</a>
+            <!-- <a href="#">Snacks</a>
+            <a href="#">Spices</a> -->
+        </div>
+    </li>
+       <li class="item"><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div id="rightNav">
+        <input type="text" id="search">
+        <button class="btn text-bg-danger text-black border-2 fw-semibold px-1 py-0">Search</button>
+        <!-- <img src="./Images/cart_logo.jpg" alt="Shopping cart"> -->
+        <button type="button" class="btn btn-success my-2 my-sm-0 m-2" data-toggle="modal"
+                data-target="#staticBackdrop">
+            <i class="fas fa-shopping-cart total-count"></i>
+            </button>
+    </div>
+</nav>
+
+<div>
+    <div>
+        <h1 class="heading_item">About Us</h1>
+    </div>
+    <div class="row container container_items pt-4">
+        <div class="col-lg-5 container_items_left">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda delectus aliquam quisquam atque reprehenderit? Expedita aliquid veritatis rem. Omnis vel praesentium maiores deleniti? Explicabo sed dolor ipsum laborum laudantium quasi officia beatae ipsam architecto!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda delectus aliquam quisquam atque reprehenderit? Expedita aliquid veritatis rem. Omnis vel praesentium maiores deleniti? Explicabo sed dolor ipsum laborum laudantium quasi officia beatae ipsam architecto!</p>
+        </div>
+        <div class="col-lg-5 container_items_right">
+            <img src="./Images/aboutus_image.png" alt="AboutUs Image">
+        </div>
+    </div>
+
+</div>
+
+<!--Shopping cart popup-->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <table class="show-cart table">
+        
+                  </table>
+                  <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
