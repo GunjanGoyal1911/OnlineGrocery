@@ -1,189 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
-    
-</head>
-<body>
-    <nav id="navbar">
-        <div id="logo">
-            <img src="Images\logo.jpg" alt="IndianGrocery">
-        </div>
-    
-    <ul>
-       <li class="item"><a href="index.html">Home</a></li>
-       <li class="item"><a href="aboutUs.html">About Us</a></li>
-       <li class="item submenu"><a href="product.html">Products</a>
-        <div class="submenu-content">
-            <a href="FruitsVeggie.html">Fruits/Veggies</a>
-            <a href="FrozenFood.html">Frozen Food</a>
-            <!-- <a href="#">Snacks</a>
-            <a href="#">Spices</a> -->
-        </div>
-    </li>
-       <li class="item"><a href="contact.html">Contact Us</a></li>
-    </ul>
-    <div id="rightNav">
-        <input type="text" id="search">
-        <button class="btn text-bg-danger text-black border-2 fw-semibold px-1 py-0">Search</button>
-        <!-- <img src="./Images/cart_logo.jpg" alt="Shopping cart"> -->
-        <button type="button" class="btn btn-success my-2 my-sm-0 m-2" data-toggle="modal"
-            data-target="#staticBackdrop">
-         <i class="fas fa-shopping-cart total-count"></i>
-     </button>
-    </div>
-</nav>
-
-<div>
-    <div class="heading_title">
-        <h1 class="heading_item">Products</h1>
-    </div>    
-    <div class="tabs_item current container">
-        <div class="row justify-content-center pt-4">
-            <div class="col-lg-3 col-md-6">
-                <div class="featured-item">
-                   <div class="featured-item-img"> 
-                    <a>                   
-                         <img src="./Images/Okra.jpg" alt="Cherry">
-                    </a>                            
-                   </div>
-                   <div class="content">
-                      <h3><a href="#">Cherry</a></h3>
-                      <hr>
-                      <div class="content-in">
-                         <h4>Kr. 50 </h4>
-                         <span>(4.9)<i class="fa fa-star"></i></span>
-                      </div>
-                      <hr>
-                      <div class="featured-content-list">
-                         <button type="button" data-name="cherry" data-price="50" class="default-btn border-radius-5"> Add to cart</button>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-3 col-md-6">
-                <div class="featured-item">
-                   <div class="featured-item-img">
-                      <a href="#">
-                         <img src="./Images/Mango.jpg" alt="Mango">
-                      </a>
-                   </div>
-                   <div class="content">
-                      <h3><a href="#">Mango</a></h3>
-                      <hr>
-                      <div class="content-in">
-                         <h4>Kr. 70 </h4>
-                         <span>(4.9)<i class="fa fa-star"></i></span>
-                      </div>
-                      <hr>
-                      <div class="featured-content-list">
-                         <button type="button" data-name="Mango" data-price="70" class="default-btn border-radius-5"> Add to cart</button>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-3 col-md-6">
-                <div class="featured-item">
-                   <div class="featured-item-img">
-                      <a href="#">
-                         <img src="./Images/Pomegranate.jpg" alt="Eggplant">
-                      </a>
-                   </div>
-                   <div class="content">
-                      <h3><a href="#">Eggplant</a></h3>
-                      <hr>
-                      <div class="content-in">
-                         <h4>Kr. 50 </h4>
-                         <span>(4.9)<i class="fa fa-star"></i></span>
-                      </div>
-                      <hr>
-                      <div class="featured-content-list">
-                         <button type="button" data-name="Eggplant" data-price="50" class="default-btn border-radius-5"> Add to cart</button>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             
-             <!-- <div class="col-lg-3 col-md-6">
-                <div class="featured-item">
-                   <div class="featured-item-img">
-                      <a href="#">
-                         <img src="./Images/apple.jpg" alt="Appleimages">
-                      </a>
-                   </div>
-                   <div class="content">
-                      <h3><a href="#">Apple</a></h3>
-                      <hr>
-                      <div class="content-in">
-                         <h4>Kr. 50 </h4>
-                         <span>(4.9)<i class="fa fa-star"></i></span>
-                      </div>
-                      <hr>
-                      <div class="featured-content-list">
-                         <button type="button" data-name="apple" data-price="50" class="default-btn border-radius-5"> Add to cart</button>
-                      </div>
-                   </div>
-                </div>
-             </div> -->
-             <!-- <div class="col-lg-3 col-md-6">
-                <div class="featured-item">
-                   <div class="featured-item-img">
-                      <a href="#">
-                         <img src="./Images/apple.jpg" alt="Appleimages">
-                      </a>
-                   </div>
-                   <div class="content">
-                      <h3><a href="#">Apple</a></h3>
-                      <hr>
-                      <div class="content-in">
-                         <h4>Kr. 50 </h4>
-                         <span>(4.9)<i class="fa fa-star"></i></span>
-                      </div>
-                      <hr>
-                      <div class="featured-content-list">
-                         <button type="button" data-name="apple" data-price="50" class="default-btn border-radius-5"> Add to cart</button>
-                      </div>
-                   </div>
-                </div>
-             </div> -->
-        <!-- </div> -->
-    </div>    
-</div>
-
-<!--Shopping cart popup-->
-<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-               <div class="modal-body">
-                  <table class="show-cart table">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products-Online Grocery</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
         
-                  </table>
-                  <div class="grand-total">Total price: kr. <span class="total-cart"></span></div>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="Images\logo.jpg" alt="Online Grocery">
+            </div>
+        
+            <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="aboutUs.html">About Us</a></li>
+            <li class="item submenu"><a href="product.html">Products</a>
+                <div class="submenu-content">
+                    <a href="FruitsVeggie.html">Fruits/Veggies</a>
+                    <a href="FrozenFood.html">Frozen Food</a>
+                    
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
-                </div>
+            </li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div id="rightNav">
+                <input type="text" id="search">
+                <button class="btn text-bg-danger text-black border-2 fw-semibold px-1 py-0">Search</button>
+                <button type="button" class="btn btn-success my-2 my-sm-0 m-2" data-toggle="modal"
+                    data-target="#staticBackdrop">
+                <i class="fas fa-shopping-cart total-count"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div>
+            <div class="heading_title">
+                <h1 class="heading_item">Products</h1>
+            </div>    
+            <div class="tabs_item current container">
+                <div class="row justify-content-center pt-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="featured-item">
+                        <div class="featured-item-img"> 
+                            <a>                   
+                                <img src="./Images/Okra.jpg" alt="Okra">
+                            </a>                            
+                        </div>
+                        <div class="content">
+                            <h3><a href="#">Okra</a></h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>Kr. 50 </h4>
+                                <span>(4.9)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Orka" data-price="50" class="default-btn border-radius-5"> Add to cart</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img src="./Images/Mango.jpg" alt="Mango">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3><a href="#">Mango</a></h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>Kr. 70 </h4>
+                                <span>(4.9)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Mango" data-price="70" class="default-btn border-radius-5"> Add to cart</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="featured-item">
+                        <div class="featured-item-img">
+                            <a href="#">
+                                <img src="./Images/Pomegranate.jpg" alt="Eggplant">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3><a href="#">Eggplant</a></h3>
+                            <hr>
+                            <div class="content-in">
+                                <h4>Kr. 50 </h4>
+                                <span>(4.9)<i class="fa fa-star"></i></span>
+                            </div>
+                            <hr>
+                            <div class="featured-content-list">
+                                <button type="button" data-name="Eggplant" data-price="50" class="default-btn border-radius-5"> Add to cart</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>            
+                </div>    
             </div>
         </div>
-    </div>
 
-<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="script.js"></script>
-</body>
+        <!--Shopping cart popup-->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">
+                
+                        </table>
+                        <div class="grand-total">Total price: kr. <span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>

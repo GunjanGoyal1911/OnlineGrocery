@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frozen Food-Online Grocery</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
@@ -21,8 +21,6 @@
             <div class="submenu-content">
                 <a href="FruitsVeggie.html">Fruits/Veggies</a>
                 <a href="FrozenFood.html">Frozen Food</a>
-                <!-- <a href="#">Snacks</a>
-                <a href="#">Spices</a> -->
             </div>
         </li>
        <li class="item"><a href="contact.html">Contact Us</a></li>
@@ -30,7 +28,6 @@
     <div id="rightNav">
         <input type="text" id="search">
         <button class="btn text-bg-danger text-black border-2 fw-semibold px-1 py-0">Search</button>
-        <!-- <img src="./Images/cart_logo.jpg" alt="Shopping cart"> -->
         <button type="button" class="btn btn-success my-2 my-sm-0 m-2" data-toggle="modal"
         data-target="#staticBackdrop">
          <i class="fas fa-shopping-cart total-count"></i>
@@ -66,11 +63,11 @@
                 <div class="featured-item">
                    <div class="featured-item-img">
                       <a href="#">
-                         <img src="./Images/frozenimage2.jpg" alt="Peachimages">
+                         <img src="./Images/frozenimage2.jpg" alt="Image2">
                       </a>
                    </div>
                    <div class="content">
-                      <h3><a href="#">Aloo Tikki</a></h3>
+                      <h3><a href="#">Tikki</a></h3>
                       <hr>
                       <div class="content-in">
                          <h4>Kr. 100 </h4>
@@ -78,7 +75,7 @@
                       </div>
                       <hr>
                       <div class="featured-content-list">
-                         <button type="button" data-name="Aloo Tikki" data-price="100" class="default-btn border-radius-5"> Add to cart</button>
+                         <button type="button" data-name="Tikki" data-price="100" class="default-btn border-radius-5"> Add to cart</button>
                       </div>
                    </div>
                 </div>
@@ -91,7 +88,7 @@
                       </a>
                    </div>
                    <div class="content">
-                      <h3><a href="#">Vegetable Curry</a></h3>
+                      <h3><a href="#">Curry</a></h3>
                       <hr>
                       <div class="content-in">
                          <h4>Kr. 75 </h4>
@@ -99,7 +96,7 @@
                       </div>
                       <hr>
                       <div class="featured-content-list">
-                         <button type="button" data-name="Vegetable Curry" data-price="75" class="default-btn border-radius-5"> Add to cart</button>
+                         <button type="button" data-name="Curry" data-price="75" class="default-btn border-radius-5"> Add to cart</button>
                       </div>
                    </div>
                 </div>
@@ -125,30 +122,10 @@
                    </div>
                 </div>
              </div>
-             <!-- <div class="col-lg-3 col-md-6">
-                <div class="featured-item">
-                   <div class="featured-item-img">
-                      <a href="#">
-                         <img src="./Images/apple.jpg" alt="Appleimages">
-                      </a>
-                   </div>
-                   <div class="content">
-                      <h3><a href="#">Apple</a></h3>
-                      <hr>
-                      <div class="content-in">
-                         <h4>Kr. 50 </h4>
-                         <span>(4.9)<i class="fa fa-star"></i></span>
-                      </div>
-                      <hr>
-                      <div class="featured-content-list">
-                         <button type="button" data-name="apple" data-price="50" class="default-btn border-radius-5"> Add to cart</button>
-                      </div>
-                   </div>
-                </div>
-             </div> -->
         </div>
     </div>    
 </div>
+
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
          aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -163,11 +140,10 @@
                   <table class="show-cart table">
         
                   </table>
-                  <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
+                  <div class="grand-total">Total price: kr. <span class="total-cart"></span></div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
                 </div>
             </div>
         </div>
